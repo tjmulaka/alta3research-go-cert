@@ -10,7 +10,7 @@ import (
 	"net/http"
 )
 
-func renderImage(w http.ResponseWriter, r *http.Request, url string, fileName string) {
+func RenderImage(w http.ResponseWriter, r *http.Request, url string, fileName string) {
 
 	// create a GET request to the image
 	resp, err := http.Get(url)
